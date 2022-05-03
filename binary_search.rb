@@ -7,7 +7,7 @@ def binarySearch(arr, search_value)
   middle_index = 0
 
   while (start_index <= end_index)
-    middle_index = ((end_index - start_index)/ 2.to_f).round(0)
+    middle_index = ((end_index + start_index)/ 2.to_f).round(0)
 
     if (arr[middle_index] == search_value)
       return true
@@ -22,5 +22,5 @@ def binarySearch(arr, search_value)
 end
 
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-search_value = 3
+search_value = 6
 puts binarySearch(array, search_value)
